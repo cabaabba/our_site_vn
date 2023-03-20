@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@200&display=swap');
+
+:root {
+    --white:#3d45b6;
+    --shapka:#151a5c;
+    --fon:#000000;
+    --knopo4ka:#151a5c;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+body{
+    background-color: var(--fon);
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+
+}
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: var(--fon);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--shapka);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+.heading{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #ffffff;
+    background: var(--knopo4ka);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 8rem 3rem;
+}
+.btn:hover{
+    background: var(--white);
+    color: var(--knopo4ka);
+    letter-spacing: .1rem;
+}
+header .logo{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i{
+    color: var(--shapka);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #ffffff;
+}
+header .navbar a.ative,
+header .navbar a:hover{
+    color: var(#fff);
+    background: var(--white);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #151a5c;
+    border-radius: 50%;
+    background: var(--white);
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--white);
+    background: #151a5c;
+    transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.containerv {
+  display: flex;
+  width: 1040px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  background-color: #151a5c;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 400px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+  font-size: 20px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 15px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-release {
+  background-color: #ff91f0;
+}
+.tag-popular {
+  background-color: #657ec9;
+}
+.tag-fashion {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
